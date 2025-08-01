@@ -1,0 +1,137 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- General & Layout --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* --- Forms & Buttons --- */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: #e74c3c;
+}
+.btn-secondary:hover {
+  background-color: #c0392b;
+}
+
+/* --- Dynamic Question Fields --- */
+.question-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* --- Lists & Cards --- */
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #fafafa;
+}
+
+.card h4 {
+  margin-top: 0;
+}
+
+.dashboard-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-list li a {
+  display: block;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.dashboard-list li a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
